@@ -1,0 +1,69 @@
+create database pro_db;
+create table products(id int primary key NOT NULL,
+					 product_name varchar(255),
+					 description varchar(225),
+					 image_url varchar(225),
+					 price varchar(50),
+					 quantity int not null);
+					 
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(1,'cabbage','it is a vegetable','/assets/image/products/cabbage.jfif',50,200);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(2,'potato','it is a vegetable','/assets/image/products/potato.jfif',20,200);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(3,'onion','it is a vegetable','/assets/image/products/onion.jfif',25,250);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(4,'Ladyfinger','it is a vegetable','/assets/image/products/ladyfinger.jfif',45,240);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(5,'carrot','it is a vegetable','/assets/image/products/carrot.jfif',40,230);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(6,'Radish','it is a vegetable','/assets/image/products/radish.jfif',12,230);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(7,'Grapes','it is a fruits','/assets/image/products/grapes.jfif',24,290);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(8,'Mango','it is a fruits','/assets/image/products/mango.jfif',45,220);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(9,'apple','it is a fruits','/assets/image/products/apple.jfif',80,300);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(10,'Orange','it is a fruits','/assets/image/products/orange.jfif',55,310);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(11,'Ginger','it is a vegetable','/assets/image/products/ginger.jfif',60,310);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(12,'Garlic','it is a vegetable','/assets/image/products/garlic.jfif',58,370);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(13,'lemon','it is a vegetable','/assets/image/products/lemon.jfif',5,560);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(15,'papaya','it is a fruits','/assets/image/products/papaya.jfif',52,240);
+					 insert into products(id, product_name,description,image_url,price,quantity)
+					 values(16,'Guava','it is a fruits','/assets/image/products/guava.jfif',18,290);
+					 
+					 
+select * from products;  
+
+
+
+CREATE TABLE Registration(id serial primary key,
+First_Name varchar(255) default null,
+Last_Name varchar (255) default null,
+Email_Id varchar (255) default null,
+Mobile_Number varchar(255) default null,
+BirthDate date default null,
+Password varchar (255) default null,
+unique (Email_Id));
+
+
+
+select * from registration;
+
+insert into registration(id, first_name,last_name,email_id, mobile_number,birthdate,password)
+values('Aman','Gupta','aman@gmail.com','976543425',11-02-1997,'aman123');
+insert into registration(id, first_name,last_name,email_id, mobile_number,birthdate,password)
+values('Sameer','Prasad','sameer@gmail.com','9867543425',11-05-1993,'Sameer@11');
+insert into registration(id, first_name,last_name,email_id, mobile_number,birthdate,password)
+values('Virendra','Kumar','virendra@gmail.com','9506877430',23-12-1996,'Vire@11$');
+insert into registration(id, first_name,last_name,email_id, mobile_number,birthdate,password)
+values('Rohit','Yadav','rohit@gmail.com','7865432657',30-11-1993,'rohit11@');
+insert into registration(id, first_name,last_name,email_id, mobile_number,birthdate,password)
+values('Ritesh','Pandey','ritesh@gmail.com','9638541231',11-02-1991,'ritesh@11');
+
+select * from registration;
